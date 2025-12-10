@@ -2,7 +2,7 @@ class Frontrange < Formula
   desc "Swift package for parsing and managing YAML front matter in text files"
   homepage "https://github.com/DandyLyons/FrontRange"
   url "https://github.com/DandyLyons/FrontRange/archive/refs/tags/v0.1.0-beta.tar.gz"
-  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5" # This will be filled in after creating the release
+  sha256 "37a820cc488e9b42e9daef35315594ec1b1c1c711adf67387635dcb3fd42dbe3" # This will be filled in after creating the release
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
