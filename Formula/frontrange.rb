@@ -1,8 +1,8 @@
 class Frontrange < Formula
   desc "Swift package for parsing and managing YAML front matter in text files"
   homepage "https://github.com/DandyLyons/FrontRange"
-  url "https://github.com/DandyLyons/FrontRange/archive/refs/tags/v0.1.0-beta.tar.gz"
-  sha256 "37a820cc488e9b42e9daef35315594ec1b1c1c711adf67387635dcb3fd42dbe3" # This will be filled in after creating the release
+  url "https://github.com/DandyLyons/FrontRange/archive/refs/tags/v0.2.0-beta.tar.gz"
+  sha256 "c2ce2d54a54868e18783feadadff9de0b78bd873b72ebca1ba1fba35e7516cc5"
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
@@ -21,7 +21,7 @@ class Frontrange < Formula
 
   test do
     # Test fr CLI
-    assert_match "0.1.0-beta", shell_output("#{bin}/fr --version")
+    assert_match "0.2.0-beta", shell_output("#{bin}/fr --version")
 
     # Test frontrange-mcp (basic check that it exists)
     assert_predicate bin/"frontrange-mcp", :exist?
