@@ -6,7 +6,7 @@ class Frontrange < Formula
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
-  depends_on xcode: ["14.0", :build]
+  # Only requires Command Line Tools, not full Xcode
   depends_on :macos
 
   def install
