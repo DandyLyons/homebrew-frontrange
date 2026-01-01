@@ -6,17 +6,12 @@ class Frontrange < Formula
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
-  # Only requires Command Line Tools, not full Xcode
   depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
-
-    # Install the CLI tool
-    bin.install ".build/release/fr"
-
-    # Install the MCP server
-    bin.install ".build/release/frontrange-mcp"
+    # Install pre-built binaries from release tarball
+    bin.install "fr"
+    bin.install "frontrange-mcp"
   end
 
   test do
