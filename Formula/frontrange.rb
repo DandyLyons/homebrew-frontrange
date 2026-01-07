@@ -2,12 +2,12 @@ class Frontrange < Formula
   desc "Swift package for parsing and managing YAML front matter in text files"
   homepage "https://github.com/DandyLyons/FrontRange"
   url "https://github.com/DandyLyons/FrontRange/archive/refs/tags/v0.3.0-beta.tar.gz"
-  sha256 "9aa2fa2cfe429877090917d58a4a0b08b1e80724bde66748dfa31cee1aef418e"
+  sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
   # Requires Xcode for complete Swift toolchain (Command Line Tools lacks PackageDescription framework)
-  depends_on xcode: ["14.0", :build]
+  depends_on xcode: [">= 14.0", :build]
   depends_on :macos
 
   def install
