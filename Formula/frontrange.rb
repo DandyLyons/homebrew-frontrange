@@ -6,7 +6,8 @@ class Frontrange < Formula
   license "MIT" # Update if different
   head "https://github.com/DandyLyons/FrontRange.git", branch: "main"
 
-  # Only requires Command Line Tools, not full Xcode
+  # Requires Xcode for complete Swift toolchain (Command Line Tools lacks PackageDescription framework)
+  depends_on xcode: ["14.0", :build]
   depends_on :macos
 
   def install
